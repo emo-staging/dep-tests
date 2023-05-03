@@ -4,3 +4,6 @@
 [submodule "lib/dep-core"]
 	path = lib/dep-core
 	url = https://github.com/emo-staging/dep-core
+[submodule "lib/dep-sol"]
+	path = lib/dep-sol
+	url = https://github.com/emo-staging/dep-sol
