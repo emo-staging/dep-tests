@@ -28,6 +28,10 @@ jobs:
             git push --delete origin ${{ steps.tag.outputs.tag }}
           fi
       - name: Tag commit with YY-MM-DD/branchname
+        env:
+          PAT: ${{ secrets.PAT }}
         run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git tag ${{ steps.tag.outputs.tag }}
-          git push --tags
+          git push --tags --force --quiet "https://github.com/${GITHUB_REPOSITORY}.git" HEAD:${GITHUB_REF} 
