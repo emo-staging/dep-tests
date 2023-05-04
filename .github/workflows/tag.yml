@@ -29,8 +29,6 @@ jobs:
             git push --delete origin ${{ steps.tag.outputs.tag }}
           fi
       - name: Tag commit with YY-MM-DD/branchname
-        env:
-          PAT: ${{ secrets.PAT }}
         run: |
           git tag ${{ steps.tag.outputs.tag }}
           git push --tags --force 
