@@ -9,7 +9,7 @@ on:
 permissions:
     contents: write
 
-jobs:
+jobs: 
   tag-commit:
     runs-on: ubuntu-latest
     steps:
