@@ -12,3 +12,6 @@
 [submodule "lib/dep-types"]
 	path = lib/dep-types
 	url = https://github.com/emo-staging/dep-types
+[submodule "lib/ds-test"]
+	path = lib/ds-test
+	url = https://github.com/dapphub/ds-test
