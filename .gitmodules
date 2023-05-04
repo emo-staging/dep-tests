@@ -8,3 +8,4 @@
 [submodule "lib/dep-sol"]
 	path = lib/dep-sol
 	url = https://github.com/emo-staging/dep-sol
+	branch = nt
