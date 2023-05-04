@@ -34,4 +34,4 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git tag ${{ steps.tag.outputs.tag }}
-          git push --tags --force --quiet "https://github.com/${GITHUB_REPOSITORY}.git" HEAD:${GITHUB_REF} 
+          git push --tags --force 
